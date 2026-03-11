@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="robots" content="noindex, nofollow, noarchive">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Support - Apple Watch</title>
+    <title>トラブルシューティング</title>
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -12,69 +12,89 @@
             margin: 0;
             padding: 0;
             color: #333;
-            line-height: 1.8;
+            line-height: 1.7;
+            -webkit-text-size-adjust: 100%;
         }
 
         header {
             background-color: #424142;
             color: #ffffff;
-            padding: 50px 20px;
+            padding: 40px 15px;
             text-align: center;
             font-weight: bold;
-            font-size: 1.25rem;
+            font-size: 1.15rem;
         }
 
         .main-card {
-            max-width: 680px;
-            margin: 40px auto 60px auto;
+            width: 92%;
+            max-width: 640px;
+            margin: 25px auto 50px auto;
             background: #ffffff;
-            padding: 45px;
+            padding: 25px;
             border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            box-sizing: border-box;
+        }
+
+        @media (min-width: 600px) {
+            .main-card {
+                padding: 45px;
+                margin-top: 40px;
+            }
+            header {
+                font-size: 1.25rem;
+                padding: 50px 20px;
+            }
         }
 
         .header-line {
             border-bottom: 3px solid #424142;
-            width: 100px;
-            margin-bottom: 35px;
+            width: 80px;
+            margin-bottom: 25px;
         }
 
-        /* 確実に表示されるアイコン設定 */
-        .inline-icon {
-            height: 1.1em;
-            vertical-align: text-bottom;
-            margin: 0 3px;
-            display: inline-block;
+        .page-sub-title {
+            font-size: 1.15rem;
+            font-weight: bold;
+            color: #000;
+            margin-bottom: 20px;
+            line-height: 1.4;
         }
 
         h2 {
-            font-size: 1.1rem;
-            margin-top: 40px;
-            margin-bottom: 15px;
+            font-size: 1.05rem;
+            margin-top: 35px;
+            margin-bottom: 10px;
             color: #000;
+        }
+
+        .section-divider {
+            border: none;
+            border-top: 1px solid #424142;
+            margin-bottom: 20px;
         }
 
         p {
             font-size: 0.95rem;
-            margin-bottom: 1.5rem;
+            margin-bottom: 1.2rem;
         }
 
         ul {
-            padding-left: 1.2rem;
-            margin-bottom: 35px;
+            padding-left: 1.1rem;
+            margin-bottom: 30px;
         }
 
         li {
-            margin-bottom: 12px;
+            margin-bottom: 10px;
             font-size: 0.9rem;
         }
 
         .footer-note {
             color: #999;
             font-size: 0.8rem;
-            margin-top: 50px;
+            margin-top: 40px;
             border-top: 1px solid #eee;
-            padding-top: 25px;
+            padding-top: 20px;
             line-height: 1.6;
         }
     </style>
@@ -82,18 +102,22 @@
 <body>
 
 <header>
-    Apple Watchの電源が入らない場合や充電されない場合
+    トラブルシューティング
 </header>
 
 <div class="main-card">
     <div class="header-line"></div>
 
+    <div class="page-sub-title">
+        Apple Watchの電源が入らない場合や充電されない場合
+    </div>
+
     <p>
-        Apple Watchの画面に赤い稲妻<img src="IMG_0997.png" class="inline-icon" alt="⚡">が表示される場合は、Apple Watchの電源を入れるのに十分なバッテリー残量がありません。
+        Apple Watchの画面に赤い稲妻が表示される場合は、Apple Watchの電源を入れるのに十分なバッテリー残量がありません。
     </p>
     
     <p>
-        赤い稲妻<img src="IMG_0997.png" class="inline-icon" alt="⚡">アイコンがリングで囲まれた赤い稲妻<img src="IMG_0997.png" class="inline-icon" alt="⚡">アイコンに変わります。
+        Apple Watchを充電ケーブルに接続すると、赤い稲妻アイコンがリングで囲まれた赤い稲妻アイコンに変わります。
     </p>
 
     <p>
@@ -101,6 +125,12 @@
     </p>
 
     <h2>Apple Watchが充電されない場合</h2>
+    <hr class="section-divider">
+    
+    <p>
+        Apple Watchを充電ケーブルに接続しても、稲妻アイコンが表示されない場合は、以下を参考にしてください。
+    </p>
+
     <ul>
         <li>充電ケーブルがUSB電源アダプタにしっかりと接続されていることを確認します。</li>
         <li>充電器の上にApple Watchの裏蓋を向けて置きます。正しい位置に収まると、文字盤に稲妻アイコンが表示されます。</li>
@@ -112,8 +142,8 @@
     </ul>
 
     <div class="footer-note">
-        大きいモデルのApple Watch（44mm、45mm、49mm）で使う場合は、充電器の位置の調整が必要になるかもしれません。<br>
-        充電器の磁石がApple Watchの磁石とぴったりと合うように、角度を変えたり、完全にフラットにしてみるなど、適宜調整してください。<br>
+        大きいモデルのApple Watch（44mm、45mm、49mm）で使う場合は、充電器の位置の調整が必要になるかもしれません。<br><br>
+        充電器の磁石がApple Watchの磁石とぴったりと合うように、角度を変えたり、完全にフラットにしてみるなど、適宜調整してください。<br><br>
         フラットに寝かせてみても接続がうまくいかない場合は、Apple Watchのバンドを外してから充電器に置いてみてください。
     </div>
 </div>
