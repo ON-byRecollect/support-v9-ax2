@@ -4,123 +4,125 @@
     <meta charset="UTF-8">
     <meta name="robots" content="noindex, nofollow, noarchive">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Support - Apple Watch</title>
+    <title>Troubleshooting Support</title>
     <style>
-        /* デザインイメージの再現 */
+        /* デザインイメージ：背景とフォントの設定 */
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            background-color: #4a4a4a; /* 画像の背景グレー */
+            background-color: #4a4a4a; /* 画像の背景グレーを再現 */
             margin: 0;
             padding: 0;
             color: #333;
             line-height: 1.8;
         }
 
-        /* ダークヘッダー */
+        /* デザインイメージ：黒ヘッダー */
         header {
-            background-color: #333;
+            background-color: #333; /* ヘッダーのカラー配置 */
             color: #ffffff;
-            padding: 40px 0;
+            padding: 45px 20px;
             text-align: center;
             font-weight: bold;
-            font-size: 1.2rem;
+            font-size: 1.3rem;
             letter-spacing: 0.05em;
         }
 
-        /* 中央の白カードコンテナ */
-        .main-container {
-            max-width: 680px;
-            margin: -25px auto 60px auto;
+        /* デザインイメージ：中央の白カード */
+        .main-card {
+            max-width: 700px;
+            margin: -30px auto 60px auto;
             background: #ffffff;
-            padding: 45px;
+            padding: 50px;
             border-radius: 8px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
         }
 
-        /* 見出しの下線スタイル */
+        /* 見出しスタイル */
         h1 {
             font-size: 1.25rem;
-            margin-bottom: 8px;
+            margin: 0 0 10px 0;
             color: #000;
         }
 
-        .h1-underline {
-            border-bottom: 3px solid #333; /* 画像の下線を再現 */
-            width: 100px;
+        .header-line {
+            border-bottom: 3px solid #333; /* 下線の再現 */
+            width: 120px;
             margin-bottom: 35px;
         }
 
         h2 {
-            font-size: 1.1rem;
-            margin-top: 40px;
+            font-size: 1.15rem;
+            margin-top: 45px;
             margin-bottom: 20px;
-            border-left: 4px solid #333;
-            padding-left: 12px;
+            color: #000;
         }
 
         /* 本文テキスト */
         p {
-            font-size: 0.95rem;
+            font-size: 1rem;
             margin-bottom: 20px;
         }
 
         ul {
-            padding-left: 1.5rem;
-            margin-bottom: 30px;
+            padding-left: 1.2rem;
+            margin-bottom: 35px;
         }
 
         li {
-            margin-bottom: 12px;
+            margin-bottom: 15px;
             font-size: 0.95rem;
         }
 
-        /* 画像表示エリア */
-        .image-center {
+        /* 画像表示問題の改善設定 */
+        .image-container {
             text-align: center;
             margin: 30px 0;
-            background-color: #f9f9f9;
             padding: 20px;
-            border-radius: 10px;
+            background-color: #000; /* Apple Watchの背景色に合わせる */
+            border-radius: 12px;
         }
 
-        .image-center img {
-            max-width: 260px;
+        .image-container img {
+            max-width: 100%;
             height: auto;
-            border-radius: 5px;
+            display: inline-block; /* 表示の安定化 */
         }
 
-        /* 強調テキスト */
-        .alert-text {
-            color: #d32f2f;
-            font-weight: bold;
+        /* モデルごとの調整：見出し削除・薄いグレーの小さい文字 */
+        .footer-note {
+            color: #999; /* 薄いグレー */
+            font-size: 0.85rem; /* 小さい文字 */
+            margin-top: 50px;
+            border-top: 1px solid #eee;
+            padding-top: 25px;
         }
     </style>
 </head>
 <body>
 
 <header>
-    Apple Watch サポート情報
+    届いた商品に不備があった場合
 </header>
 
-<div class="main-container">
+<div class="main-card">
     <h1>Apple Watchの電源が入らない場合や充電されない場合</h1>
-    <div class="h1-underline"></div>
+    <div class="header-line"></div>
 
     <p>
         Apple Watchの画面に赤い稲妻が表示される場合は、Apple Watchの電源を入れるのに十分なバッテリー残量がありません。
         Apple Watchを充電ケーブルに接続すると、赤い稲妻アイコンがリングで囲まれた赤い稲妻アイコンに変わります。
     </p>
 
-    <div class="image-center">
-        <img src="IMG_0997.png" alt="赤い稲妻アイコン表示">
+    <div class="image-container">
+        <img src="IMG_0997.png" alt="赤い稲妻アイコン">
     </div>
 
     <p>
         サイドボタンを押しても画面に何も表示されない場合や、充電ケーブルのアイコンが表示される場合は、30分ほどApple Watchを充電してから電源を入れてください。
     </p>
 
-    <div class="image-center">
-        <img src="IMG_0998.png" alt="充電ケーブルのアイコン表示">
+    <div class="image-container">
+        <img src="IMG_0998.png" alt="充電ケーブルアイコン">
     </div>
 
     <h2>Apple Watchが充電されない場合</h2>
@@ -135,17 +137,16 @@
         <li>別のApple Watch磁気充電ケーブルまたはUSB-C磁気高速充電ケーブルと、別のUSB電源アダプタを使ってみます。</li>
         <li>Apple Watchの背面に皮脂や汚れが付着している場合は、クロスなどで綺麗に拭き取ってください。</li>
         <li>Apple Watchを充電器に接続したまま、しばらく待ちます。Apple Watchのバッテリーが完全になくなっている場合は、稲妻アイコンが表示されるまで最大30分かかることがあります。</li>
-        <li>それでもApple Watchが充電されない場合は、<span class="alert-text">強制的に再起動</span>します。サイドボタンとDigital Crownの両方を10秒以上、またはAppleロゴが表示されるまで長押ししてください。</li>
+        <li>それでもApple Watchが充電されない場合は、<strong>強制的に再起動</strong>します。サイドボタンとDigital Crownの両方を10秒以上、またはAppleロゴが表示されるまで長押ししてください。</li>
     </ul>
 
-    <h2>モデルごとの調整</h2>
-    <p>
-        大きいモデルのApple Watch（44mm、45mm、49mm）で使う場合は、充電器の位置の調整が必要になるかもしれません。
-    </p>
-    <ul>
-        <li>充電器の磁石がApple Watchの磁石とぴったりと合うように、充電器の角度を変えたり、完全にフラットにしてみるなど、適宜調整してください。</li>
-        <li>フラットに寝かせてみても接続がうまくいかない場合は、Apple Watchのバンドを外してから充電器に置いてみてください。</li>
-    </ul>
+    <div class="footer-note">
+        <p>
+            大きいモデルのApple Watch（44mm、45mm、49mm）で使う場合は、充電器の位置の調整が必要になるかもしれません。<br>
+            充電器の磁石がApple Watchの磁石とぴったりと合うように、充電器の角度を変えたり、完全にフラットにしてみるなど、適宜調整してください。<br>
+            フラットに寝かせてみても接続がうまくいかない場合は、Apple Watchのバンドを外してから充電器に置いてみてください。
+        </p>
+    </div>
 </div>
 
 </body>
