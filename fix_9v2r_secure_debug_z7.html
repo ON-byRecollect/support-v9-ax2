@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apple Watch Support</title>
     <style>
-        /* ページ背景を #F5F5F5 に設定 */
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
             background-color: #F5F5F5; 
@@ -16,7 +15,6 @@
             line-height: 1.8;
         }
 
-        /* ヘッダー色を #424142 に設定 */
         header {
             background-color: #424142;
             color: #ffffff;
@@ -26,10 +24,9 @@
             font-size: 1.25rem;
         }
 
-        /* カードがヘッダーに被らないようにマージンを調整 */
         .main-card {
             max-width: 680px;
-            margin: 40px auto 60px auto; /* ネガティブマージンを排除 */
+            margin: 40px auto 60px auto; 
             background: #ffffff;
             padding: 40px;
             border-radius: 8px;
@@ -43,18 +40,18 @@
             line-height: 1.4;
         }
 
-        /* 下線も #424142 に統一 */
+        h2 {
+            font-size: 1.1rem;
+            margin-top: 45px;
+            margin-bottom: 10px;
+            color: #000;
+        }
+
+        /* 共通の直線スタイル (#424142) */
         .header-line {
             border-bottom: 3px solid #424142;
             width: 100px;
             margin-bottom: 30px;
-        }
-
-        h2 {
-            font-size: 1.1rem;
-            margin-top: 40px;
-            margin-bottom: 15px;
-            color: #000;
         }
 
         p {
@@ -72,11 +69,10 @@
             font-size: 0.9rem;
         }
 
-        /* 画像ボックスの改善 */
         .img-box {
             text-align: center;
             margin: 25px 0;
-            background-color: #000; /* Apple Watch自体の背景 */
+            background-color: #000;
             padding: 20px;
             border-radius: 12px;
         }
@@ -87,7 +83,6 @@
             display: inline-block;
         }
 
-        /* 下部テキスト：薄いグレーの小さい文字 */
         .footer-note {
             color: #999;
             font-size: 0.8rem;
@@ -125,6 +120,8 @@
     </div>
 
     <h2>Apple Watchが充電されない場合</h2>
+    <div class="header-line"></div>
+    
     <p>
         Apple Watchを充電ケーブルに接続しても、稲妻アイコンが表示されない場合は、以下を参考にしてください。
     </p>
